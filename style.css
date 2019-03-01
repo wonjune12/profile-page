@@ -1,0 +1,15 @@
+
+
+#profilepic{
+  width: 200px;
+  height: 250px;
+  border-radius : 20px;
+  border: 1px solid #1F8BF1;
+}
+.section-height{
+  height: 45%;
+}
+
+/* body{
+  background : linear-gradient(to top, #333333,#ffffff);
+} */
