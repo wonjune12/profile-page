@@ -1,7 +1,7 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-#mainBody{
+.mainBody{
   background-color : #4C9BF3;
   border-radius: 10px;
   box-shadow : 10px 10px #aaaaaa;
@@ -24,7 +24,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   color : #ffffff;
 }
 
-#summary{
+.summary{
   border : 1px solid black;
   border-radius : 10px;
   box-shadow : 10px 10px rgb(85, 154, 233);
@@ -59,4 +59,21 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #header{
   font-size : 0.1px;
+}
+
+#navs{
+  color:white;
+}
+
+#landingCard{
+  color:white;
+  font-size:0.1px;
+}
+#summaryCard{
+  color:white;
+  font-size:0.1px;
+}
+#projectCard{
+  color:white;
+  font-size:0.1px;
 }
