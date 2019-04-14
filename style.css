@@ -36,7 +36,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 #summaryBody{
   font-family: 'Roboto', sans-serif;
   text-align : left;
-  margin : 100px 0 0 50px;
+  margin : 50px 0 0 100px;
 }
 
 #summaryTitle{
@@ -46,7 +46,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .uk-list{
-  margin: 60px 0 0 30px;
+  margin: 60px 0 0 50px;
   text-align : left; 
 }
 
@@ -63,6 +63,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #navs{
   color:white;
+  padding-left : 15px;
 }
 
 #landingCard{
@@ -74,6 +75,10 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   font-size:0.1px;
 }
 #projectCard{
+  color:white;
+  font-size:0.1px;
+}
+#contactCard{
   color:white;
   font-size:0.1px;
 }
