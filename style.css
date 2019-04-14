@@ -99,17 +99,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   font-size:0.1px;
 }
 
-#outpack-desc{
+#desc{
   font-size : 15px;
   color:black;
 }
 
-#pokedex-desc{
-  font-size : 15px;
-  color:black;
-}
-#puzzler-desc{
-  font-size : 15px;
-  color:black;
-
+#projectToHome{
+  color : white;
 }
