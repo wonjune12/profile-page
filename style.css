@@ -79,7 +79,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #navs{
   color:white;
-  padding-left : 15px;
+  padding : 0 15px 15px 0;
 }
 
 #landingCard{
@@ -100,16 +100,16 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 #outpack-desc{
-  font-size : 10px;
+  font-size : 15px;
   color:black;
 }
 
 #pokedex-desc{
-  font-size : 10px;
+  font-size : 15px;
   color:black;
 }
 #puzzler-desc{
-  font-size : 10px;
+  font-size : 15px;
   color:black;
 
 }
