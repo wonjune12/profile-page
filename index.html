@@ -80,33 +80,46 @@
             Projects
           </h1>
           <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>   
-        
-          <div uk-grid>
-              <div class="uk-width-auto">
-          
-                  <div class="uk-inline" uk-toggle="target: #pokedex-desc; animation: uk-animation-fade" >
-                      <img src="images/Outpacktrack.jpg" alt="">
-                      <div class="uk-overlay uk-overlay-default uk-position-bottom" id="pokedex-desc">
-                          <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div>
+
+          <div uk-grid class="uk-child-width-expand@s">
+              <div class="uk-margin-left uk-margin-right uk-margin-large-top">
+                  <div class="uk-card">
+                  <div class="uk-inline" >
+                    <img src="images/Outpacktrack.jpg" uk-toggle="target: #outpack-desc; animation: uk-animation-fade" alt="">
+                    <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                      <a href="https://outpacktrack.herokuapp.com/" id="outpack-desc" target="_blank" hidden>Outlook package tracker</a>
+                    </div>
                   </div>
-          
+                </div>
               </div>
-              <div>
-          
-                  <div class="uk-inline">
-                      <img src="images/photo.jpg" alt="">
-                      <div class="uk-overlay-default uk-position-cover"></div>
-                      <div class="uk-overlay uk-position-bottom uk-dark">
-                          <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div>
+              <div class="uk-margin-left uk-margin-right uk-margin-large-top">
+                <div class="uk-card">
+                <div class="uk-inline" >
+                  <img src="images/puzzler.jpg" uk-toggle="target: #puzzler-desc; animation: uk-animation-fade" alt="">
+                  <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <a href="https://outpacktrack.herokuapp.com/" id="puzzler-desc" target="_blank" hidden>Puzzler Blog</a>
                   </div>
-          
+                </div>
               </div>
+            </div>
+            <div class="uk-margin-left uk-margin-right uk-margin-large-top">
+              <div class="uk-card">
+              <div class="uk-inline" >
+                <img src="images/Pokedex.jpg" uk-toggle="target: #pokedex-desc; animation: uk-animation-fade" alt="">
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                  <a href="https://outpacktrack.herokuapp.com/" id="pokedex-desc" target="_blank" hidden>Front-end Pokedex project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
           </div>
       </div>
       </div>
     </div>
+
     <div id="contactCard">1</div>
     <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500; repeat: true">
         <div class="uk-card uk-card-default summary">
@@ -117,8 +130,8 @@
             <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>
 
             <div class="uk-position-center uk-width-auto">
-              <a href="https://github.com/wonjune12/" class="uk-icon-link" target="_black" uk-icon="icon: github-alt; ratio: 5"> </a>
-              <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-link" target="_black" uk-icon="icon:linkedin; ratio: 5"> </a> <br/>
+              <a href="https://github.com/wonjune12/" class="uk-icon-link" target="_blank" uk-icon="icon: github-alt; ratio: 5"> </a>
+              <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-link" target="_blank" uk-icon="icon:linkedin; ratio: 5"> </a> <br/>
               <span uk-icon="icon:mail; ratio:4"></span> wonjun.choi13@outlook.com
 
             </div>

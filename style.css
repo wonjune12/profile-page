@@ -98,3 +98,18 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   color:white;
   font-size:0.1px;
 }
+
+#outpack-desc{
+  font-size : 10px;
+  color:black;
+}
+
+#pokedex-desc{
+  font-size : 10px;
+  color:black;
+}
+#puzzler-desc{
+  font-size : 10px;
+  color:black;
+
+}
