@@ -1,7 +1,7 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-#mainBody{
+.mainBody{
   background-color : #4C9BF3;
   border-radius: 10px;
   box-shadow : 10px 10px #aaaaaa;
@@ -9,7 +9,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   height : 800px;
   margin : 4% 0 8% 0;
   padding : 15% 0 15% 0;
-  
 }
 
 #mainName{
@@ -24,7 +23,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   color : #ffffff;
 }
 
-#summary{
+.summary{
   border : 1px solid black;
   border-radius : 10px;
   box-shadow : 10px 10px rgb(85, 154, 233);
@@ -33,10 +32,19 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   margin : 4% 0 7% 0;
 }
 
+.project{
+  background-color : #4C9BF3;
+  border-radius: 10px;
+  box-shadow : 10px 10px #aaaaaa;
+  width : 85%;
+  height : 800px;
+  margin : 4% 0 8% 0;
+
+}
 #summaryBody{
   font-family: 'Roboto', sans-serif;
   text-align : left;
-  margin : 100px 0 0 50px;
+  margin : 50px 0 0 100px;
 }
 
 #summaryTitle{
@@ -46,8 +54,15 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .uk-list{
-  margin: 60px 0 0 30px;
+  margin: 60px 0 0 50px;
   text-align : left; 
+}
+
+#project{
+  font-family: 'Roboto, sans-serif';
+  text-align: left;
+  padding-top : 50px;
+  margin : 30px 0 0 50px;
 }
 
 #projects{
@@ -55,8 +70,40 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   color : #ffffff;
   text-align:left;
   margin-left : 50px;
+  
 }
 
 #header{
   font-size : 0.1px;
+}
+
+#navs{
+  color:white;
+  padding : 0 15px 15px 0;
+}
+
+#landingCard{
+  color:white;
+  font-size:0.1px;
+}
+#summaryCard{
+  color:white;
+  font-size:0.1px;
+}
+#projectCard{
+  color:white;
+  font-size:0.1px;
+}
+#contactCard{
+  color:white;
+  font-size:0.1px;
+}
+
+#desc{
+  font-size : 15px;
+  color:black;
+}
+
+#projectToHome{
+  color : white;
 }

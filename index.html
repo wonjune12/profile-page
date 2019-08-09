@@ -12,43 +12,33 @@
   <title> Wonjun Choi</title>
 </head>
 <body>
-  <header id="header">
-    1
-  </header>
+  <div id="landingCard">1</div>
   <center>
-    <div class="uk-card uk-card-default" id="mainBody">
-      <h1 id="mainName">
-        Wonjun Choi
-      </h1>
+    <div uk-scrollspy="target: >div; cls:uk-animation-slide-left-medium; delay: 500; repeat:true">
+    <div class="uk-card uk-card-default mainBody">
+      <h1 id="mainName">Wonjun Choi</h1>
       <h4 id="slogan">
         Developer and a puzzle Enthusiast.
       </h4>
       <br/><br/>
 
-      <h4>
-        Coming Soon...
-      </h4>
-      <!-- <div class="uk-animation-toggle" tabindex="0">
-        <div class="uk-card uk-card-body uk-animation-slide-right-small uk-animation-reverse" id="navHover">
-          <p class="uk-text-center">For more...</p>
-        </div>
-      </div>
-      <div class="uk-animation-toggle" tabindex="0">
-          <div class="uk-card uk-card-body uk-animation-slide-left-small">
-            <a href="#projects" id="navs">Projects </a>
-          </div>
-        </div> -->
+      <button uk-toggle="target: #navs; animation: uk-animation-fade" class="uk-button uk-button-default">For more...</button>
+      <br/><br/>
+      <a href="#summaryCard" id="navs" hidden> Summary   </a>
+      <a href="#projectCard" id="navs" hidden> Projects </a>
+      <a href="#contactCard" id="navs" hidden> Contacts </a>
     </div>
+  </div>
 
 
-
+    <div id="summaryCard">1</div>
     <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500; repeat: true">
-      <div class="uk-card uk-card-default" id="summary">
+      <div class="uk-card uk-card-default summary">
         <div class="uk-card-title">
           <h1 id="summaryTitle">
             Ruby on Rails & React Software Developer
           </h1>
-          <a href="#header"><span uk-icon="home" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>
+          <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>
           <div uk-grid>
             <div class="uk-width-auto">
               <ul class="uk-list uk-list-divider">
@@ -78,37 +68,78 @@
       </div>
     </div>
 
+
+
+    <div id="projectCard">1</div>
     <div uk-scrollspy="target: >div; cls:uk-animation-fade; delay: 500; repeat:true">
-      <div class="uk-card uk-card-default" id="mainBody">
-        <h1 id="projects">
-          Projects
-        </h1>
-        <a href="#header"><span uk-icon="home" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>   
-        <div uk-grid>
-          <div class="uk-width-1-2">
+      <div class="uk-card uk-card-default project">
+        <div class="uk-card-title">
+          <h1 id="summaryTitle">
+            Projects
+          </h1>
+          <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top" id="projectToHome"></span></a>   
+
+          <div uk-grid class="uk-child-width-expand@s uk-margin-large-top">
+              <div class="uk-margin-left uk-margin-right uk-margin-large-top">
+                  <div class="uk-card uk-visible-toggle" tabindex="-1">
+                  <div class="uk-inline" >
+                    <img src="images/Outpacktrack.jpg" alt="">
+                    <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
+                      <a href="https://outpacktrack.herokuapp.com/" target="_blank" >Outlook package tracker</a>
+                      <p id="desc"> Full stack web application built with Ruby on Rails. <br/>Microsoft Azure and Shipengine API</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-margin-left uk-margin-right uk-margin-large-top">
+                <div class="uk-card uk-visible-toggle" tabindex="-1">
+                <div class="uk-inline">
+                  <img src="images/puzzler.jpg" alt="">
+                  <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover" >
+                    <a href="https://ancient-ocean-90047.herokuapp.com/" target="_blank">Puzzler Blog</a>
+                    <p id="desc"> Full stack web application built on Ruby with Sinatra. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-margin-left uk-margin-right uk-margin-large-top">
+              <div class="uk-card uk-visible-toggle" tabindex="-1" >
+              <div class="uk-inline">
+                <img src="images/Pokedex.jpg" alt="">
+                <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
+                  <a href="https://wonjune12.github.io/PersonalPokedex/" target="_blank">Pokedex Project</a>
+                  <p id="desc"> Front end application built on HTML, CSS and Javascript with Bootstrap</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
           </div>
-          <div class="uk-width-1-2">
-            
-          </div>
-  
-        </div>
+      </div>
       </div>
     </div>
+
+    <div id="contactCard">1</div>
     <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500; repeat: true">
-        <div class="uk-card uk-card-default" id="summary">
+        <div class="uk-card uk-card-default summary">
           <div class="uk-card-title">
             <h1 id="summaryTitle">
               Contacts
             </h1>
-            <div class="uk-position-center">
-            <a href="https://github.com/wonjune12/" class="uk-icon-link" uk-icon="github-alt; ratio:5"></a>
-            <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-button" uk-icon="linkedin"></a>
-          </div>
-          </div>
+            <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>
+
+            <div class="uk-position-center uk-width-auto">
+              <a href="https://github.com/wonjune12/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon: github-alt; ratio: 5"> </a>
+              <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon:linkedin; ratio: 5"> </a> <br/> <br/>
+              <span uk-icon="icon:mail; ratio:4"></span> wonjun.choi13@outlook.com
+
+            </div>
           </div>
         </div>
       </div>
+     
 
   </center>
 </body>
