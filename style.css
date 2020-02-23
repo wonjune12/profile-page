@@ -1,12 +1,12 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
+
 .mainBody{
-  background-color : #4C9BF3;
+  background-color : #A3CFEC;
   border-radius: 10px;
   box-shadow : 10px 10px #aaaaaa;
-  width : 85%;
-  height : 800px;
+  height : 200px;
   margin : 4% 0 2% 0;
   padding : 15% 0 15% 0;
   align-items: center;
