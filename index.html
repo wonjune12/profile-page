@@ -24,54 +24,44 @@
           I'm Wonjun Choi
         </h1>
         <div class="d-flex justify-content-center">
-          <a href="#summaryTitle" class="uk-button"> <img id="moreInfo" src="./images/downarrow.png" uk-scroll> </a>
+          <a href="#summaryTitle" class="uk-button" uk-scroll> <img id="moreInfo" src="./images/downarrow.png"> </a>
         </div>
       </div>
     </div> 
     
     <div id="menuBar" class="list-group d-flex flex-row justify-content-center">
-      <a class="list-group-item list-group-item-action" href="#aboutMe">About</a>
-      <a class="list-group-item list-group-item-action" href="#skills">Skills</a>
-      <a class="list-group-item list-group-item-action" href="#portfolio">Projects</a>
-      <a class="list-group-item list-group-item-action" href="#contactInfo">Contact info</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe">About</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills">Skills</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio">Projects</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo">Contact info</a>
 
     </div>
-    <div data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
+    <div id="contents" data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
       <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
-        <div class="uk-card uk-margin-top">
-          <h1 id="summaryTitle"> Ruby on Rails & React Developer</h1>
-          <div uk-grid>
-            <div class="uk-width-auto">
-              <ul class="uk-list uk-list-divider">
-                <li>Name : Wonjun Choi</li>
-                <li>Position : Freelance Developer</li>
-                <li>Location : Brooklyn, New York</li>
 
-              </ul>
+          <h2 id="summaryTitle"> I am a Software Developer</h2>
+          <div class="row">
+            <div class="col">
+              <h3>Wonjun Choi</h3>
+              <h5> Job : Freelance Developer & Educator</h5>
+              <h5> Location : Brooklyn, New York</h5>
             </div>
-            <div class="uk-width-expand" id="summaryBody">
-              I am a non-traditional software developer from New York. <br/>
-              Puzzle Enthusiast who can't stand an unsolved mystery.
+            <div class="col">
+              I am a software developer and an engineer who cannot stand an unsolved puzzles and mysteries. 
             </div>
         </div>
-        <div class="uk-card">
-          <div class="uk-card-title" id="summaryTitle">
-            <h3>Skills</h3>
+
+        <div id="skills" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+        <div class="row">
+          <div class="col">
+            <h3> Skills </h3>
+            Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
+            Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
+            Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
           </div>
-          <div class="uk-card-body" id="summaryBody">
-              Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
-              Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
-              Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
-              
-          </div>
-        </div>
         </div>
       </div>
 
-      <h4 id="aboutMe"> Here are some information about me</h4>
-      <p> This that this that</p>
-      <h4 id="skills"> Here are my skills</h4>
-      <p> This that this that</p>
       <h4 id="portfolio"> Here is my past projects</h4>
       <p> This that this that</p>
       <h4 id="contactInfo"> Here is my contact information</h4>
@@ -81,5 +71,3 @@
 </body>
 
 
-
-   

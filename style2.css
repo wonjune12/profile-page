@@ -37,7 +37,21 @@
 
 
 #menuBar{
+  z-index: 1;
+
   position:sticky;
   top : 100px;
 }
 
+#contents{
+  margin: 25% 0 2.5% 0;
+  padding: 25% 0 2.5% 0;
+}
+#aboutMe{
+  margin: inherit;
+  padding: inherit;
+}
+#skills{
+  margin:inherit;
+  padding: inherit;
+}
