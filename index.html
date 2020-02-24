@@ -23,20 +23,21 @@
           Hello! <br/>
           I'm Wonjun Choi
         </h1>
+        
         <div class="d-flex justify-content-center">
-          <a href="#summaryTitle" class="uk-button" uk-scroll> <img id="moreInfo" src="./images/downarrow.png"> </a>
+          <a href="#summaryTitle" class="uk-button" uk-scroll="offset:150;"> <img id="moreInfo" src="./images/downarrow.png"> </a>
         </div>
       </div>
     </div> 
     
     <div id="menuBar" class="list-group d-flex flex-row justify-content-center">
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll>About</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll>Skills</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll>Projects</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll>Contact info</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:150">About</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:150">Skills</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:150">Projects</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:150">Contact info</a>
     </div>
     <div id="contents" data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
-      <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+      <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true">
 
           <h2 id="summaryTitle"> I am a Software Developer</h2>
           <div class="row">
@@ -61,10 +62,68 @@
         </div>
       </div>
 
+      <div id="portfolio" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
       <h4 id="portfolio"> Here is my past projects</h4>
       <p> This that this that</p>
+      <div class="row">
+        <div class="col">
+          <div class="uk-card uk-visible-toggle" tabindex="-1">
+            <div class="uk-inline" >
+              <img src="images/Outpacktrack.jpg" alt="">
+              <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
+                <a href="https://outpacktrack.herokuapp.com/" target="_blank" >Outlook package tracker</a>
+                <p id="desc"> Full stack web application built with Ruby on Rails. <br/>Microsoft Azure and Shipengine API</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="uk-card uk-visible-toggle" tabindex="-1">
+            <div class="uk-inline">
+              <img src="images/puzzler.jpg" alt="">
+              <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover" >
+                <a href="https://ancient-ocean-90047.herokuapp.com/" target="_blank">Puzzler Blog</a>
+                <p id="desc"> Full stack web application built on Ruby with Sinatra. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="uk-card uk-visible-toggle" tabindex="-1" >
+            <div class="uk-inline">
+              <img src="images/shb.png" alt="">
+              <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
+                <a href="https://www.sbcleaners.com" target="_blank">Sheepshead bay Cleaners</a>
+                <p id="desc"> Web design work for small drycleaning store.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       <h4 id="contactInfo"> Here is my contact information</h4>
       <p> This that this that</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
     </div>
   </div>
 </body>
