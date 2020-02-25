@@ -1,0 +1,65 @@
+.mainBody{
+  background-color : #ffffff;
+  margin : 2%;
+  padding : 15% 0 15% 0;
+  font-family : Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* position:sticky;
+  top:0; */
+}
+
+#landingIntro{
+  margin : 10% 0 17% 0;
+  position:center;
+}
+#hello{
+  font-size : 5rem;
+}
+
+#name{
+  font-size : 4em;
+}
+
+#shortIntro{
+  font-size : 1.2em;
+  margin-bottom : 10%;
+}
+
+.landing{
+  height : auto;
+}
+
+#moreInfo{
+  opacity: 0;
+  justify-content : center;
+  height : 100px;
+  width : 200px;
+  animation : moreInfoAnimation 3s infinite;
+}
+
+@keyframes moreInfoAnimation{
+  0%{opacity : 0}
+  50% {opacity : 1}
+  99% {opacity : 0}
+}
+
+
+
+#menuBar{
+  z-index: 1;
+  position:sticky;
+  top : 100px;
+}
+
+#contents{
+  margin: 2.5% 0 2.5% 0;
+  padding: 2.5% 0 2.5% 0;
+}
+#aboutMe{
+  margin: inherit;
+  padding: inherit;
+}
+#skills{
+  margin:inherit;
+  padding: inherit;
+}

@@ -3,146 +3,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- GetUIKit CSS CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
-  <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
   <title> Wonjun Choi</title>
 </head>
-<body>
-  <div id="landingCard" >1</div>
-  <center>
-    <div uk-scrollspy="target: >div; cls:uk-animation-slide-left-medium; delay: 200; repeat:true">
-    <div class="uk-card uk-card-default mainBody">
-      <h1 id="mainName">Wonjun Choi</h1>
-      <h4 id="slogan">
-        Developer and a puzzle Enthusiast.
-      </h4>
-      <br/><br/>
 
-      <button uk-toggle="target: #navs; animation: uk-animation-fade" class="uk-button uk-button-default">For more...</button>
-      <br/><br/>
-      <a href="#summaryCard" id="navs" hidden> Summary</a>
-      <a href="#projectCard" id="navs" hidden> Projects </a>
-      <a href="#contactCard" id="navs" hidden> Contacts </a>
+<body>
+  <div class="container container-fluid landing">
+    <div class="jumbotron mainBody">
+      <div id="landingIntro">
+        <div id="hello">
+          Hello
+        </div>
+        <div id="name">
+          My name is Wonjun Choi
+        </div>
+        <div id="shortIntro">
+          Developer, Educator and puzzle enthusiast
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#summaryTitle" class="uk-button" uk-scroll="offset:175;"> <img id="moreInfo" src="./images/downarrow.png"> </a>
+        </div>
+      </div>
+    </div> 
+    
+    <nav id="menuBar" class="list-group d-flex flex-row justify-content-center">
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:175">About</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:175">Skills</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:175">Projects</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:175">Contact info</a>
+    </nav>
+    <div id="contents" data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
+      <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true" >
+          <h2 id="summaryTitle"> I am a Software Developer</h2>
+          <div class="row">
+            <div class="col">
+              <h3>Wonjun Choi</h3>
+              <h5> Job : Freelance Developer & Educator</h5>
+              <h5> Location : Brooklyn, New York</h5>
+            </div>
+            <div class="col">
+              I am a software developer and an engineer who cannot stand an unsolved puzzles and mysteries. 
+            </div>
+           
+        </div>
+        <div class="row">
+          <div class="col">
+          <h4>Technologies :</h4>
+          <h5>
+            Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
+            Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
+            Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
+          </h5> 
+        </div>
+        </div>
+      </div>
+        <div id="skills" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+        <div class="row">
+          <div class="col">
+            <h3> Skills </h3>
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+      <h4 id="portfolio"> Here is my past projects</h4>
+      <p> This that this that</p>
+      <div class="row">
+        <div class="col">
+          <div class="uk-card uk-visible-toggle" tabindex="-1">
+            <div class="uk-inline" >
+              <img src="images/Outpacktrack.jpg" alt="">
+              <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
+                <a href="https://outpacktrack.herokuapp.com/" target="_blank" >Outlook package tracker</a>
+                <p id="desc"> Full stack web application built with Ruby on Rails. <br/>Microsoft Azure and Shipengine API</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="uk-card uk-visible-toggle" tabindex="-1">
+            <div class="uk-inline">
+              <img src="images/puzzler.jpg" alt="">
+              <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover" >
+                <a href="https://ancient-ocean-90047.herokuapp.com/" target="_blank">Puzzler Blog</a>
+                <p id="desc"> Full stack web application built on Ruby with Sinatra. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="uk-card uk-visible-toggle" tabindex="-1" >
+            <div class="uk-inline">
+              <img src="images/shb.png" alt="">
+              <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
+                <a href="https://www.sbcleaners.com" target="_blank">Sheepshead bay Cleaners</a>
+                <p id="desc"> Web design work for small drycleaning store.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <h4 id="contactInfo"> Here is my contact information</h4>
+      <p> This that this that</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
     </div>
   </div>
-
-
-    <div id="summaryCard">1</div>
-    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 200; repeat: true">
-      <div class="uk-card uk-card-default summary">
-        <div class="uk-card-title">
-          <h1 id="summaryTitle">
-            Ruby on Rails & React Software Developer
-          </h1>
-          <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>
-          <div uk-grid>
-            <div class="uk-width-auto">
-              <ul class="uk-list uk-list-divider">
-                <li>Name : Wonjun Choi</li>
-                <li>Position : Freelance Developer</li>
-                <li>Location : Brooklyn, New York</li>
-
-              </ul>
-            </div>
-            <div class="uk-width-expand" id="summaryBody">
-              I am a non-traditional software developer from New York. <br/>
-              Puzzle Enthusiast who can't stand an unsolved mystery.
-            </div>
-        </div>
-        <div class="uk-card">
-          <div class="uk-card-title" id="summaryTitle">
-            <h3>Skills</h3>
-          </div>
-          <div class="uk-card-body" id="summaryBody">
-              Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
-              Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
-              Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
-              
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div id="projectCard">1</div>
-    <div uk-scrollspy="target: >div; cls:uk-animation-fade; delay: 200; repeat:true">
-      <div class="uk-card uk-card-default project">
-        <div class="uk-card-title">
-          <h1 id="summaryTitle">
-            Projects
-          </h1>
-          <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top" id="projectToHome"></span></a>   
-
-          <div uk-grid class="uk-child-width-expand@s uk-margin-large-top uk-grid">
-              <div class="uk-margin-left uk-margin-right uk-margin-large-top">
-                  <div class="uk-card uk-visible-toggle" tabindex="-1">
-                  <div class="uk-inline" >
-                    <img src="images/Outpacktrack.jpg" alt="">
-                    <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
-                      <a href="https://outpacktrack.herokuapp.com/" target="_blank" >Outlook package tracker</a>
-                      <p id="desc"> Full stack web application built with Ruby on Rails. <br/>Microsoft Azure and Shipengine API</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-margin-left uk-margin-right uk-margin-large-top">
-                <div class="uk-card uk-visible-toggle" tabindex="-1">
-                <div class="uk-inline">
-                  <img src="images/puzzler.jpg" alt="">
-                  <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover" >
-                    <a href="https://ancient-ocean-90047.herokuapp.com/" target="_blank">Puzzler Blog</a>
-                    <p id="desc"> Full stack web application built on Ruby with Sinatra. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="uk-margin-left uk-margin-right uk-margin-large-top">
-              <div class="uk-card uk-visible-toggle" tabindex="-1" >
-              <div class="uk-inline">
-                <img src="images/shb.png" alt="">
-                <div class="uk-invisible-hover uk-overlay uk-overlay-default uk-position-cover">
-                  <a href="https://www.sbcleaners.com" target="_blank">Sheepshead bay Cleaners</a>
-                  <p id="desc"> Web design work for small drycleaning store.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div uk-grid class="uk-child-width-expand@s uk-margin-large-top uk-grid">
-            <div>
-              <a style="color:whitesmoke" href="https://github.com/wonjunchoi13/Techwork">TechWork Teaching Material</a>
-            </div>
-          </div>
-
-      </div>
-      </div>
-    </div>
-
-    <div id="contactCard">1</div>
-    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 200; repeat: true">
-        <div class="uk-card uk-card-default summary">
-          <div class="uk-card-title">
-            <h1 id="summaryTitle">
-              Contacts
-            </h1>
-            <a href="#landingCard"><span uk-icon="icon: home; ratio:3" class="uk-position-top-right uk-margin-right uk-margin-top"></span></a>
-
-            <div class="uk-position-center uk-width-auto">
-              <a href="https://github.com/wonjune12/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon: github-alt; ratio: 5"> </a>
-              <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon:linkedin; ratio: 5"> </a> <br/> <br/>
-              <span uk-icon="icon:mail; ratio:4"></span> wonjun.choi13@outlook.com
-
-            </div>
-          </div>
-        </div>
-      </div>
-     
-
-  </center>
 </body>
+
+
