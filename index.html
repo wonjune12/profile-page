@@ -18,27 +18,30 @@
 <body>
   <div class="container container-fluid landing">
     <div class="jumbotron mainBody">
-      <div id="">
-        <h1 id="mainName"> 
-          Hello! <br/>
-          I'm Wonjun Choi
-        </h1>
-        
+      <div id="landingIntro">
+        <div id="hello">
+          Hello
+        </div>
+        <div id="name">
+          My name is Wonjun Choi
+        </div>
+        <div id="shortIntro">
+          Developer, Educator and puzzle enthusiast
+        </div>
         <div class="d-flex justify-content-center">
-          <a href="#summaryTitle" class="uk-button" uk-scroll="offset:150;"> <img id="moreInfo" src="./images/downarrow.png"> </a>
+          <a href="#summaryTitle" class="uk-button" uk-scroll="offset:175;"> <img id="moreInfo" src="./images/downarrow.png"> </a>
         </div>
       </div>
     </div> 
     
-    <div id="menuBar" class="list-group d-flex flex-row justify-content-center">
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:150">About</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:150">Skills</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:150">Projects</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:150">Contact info</a>
-    </div>
+    <nav id="menuBar" class="list-group d-flex flex-row justify-content-center">
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:175">About</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:175">Skills</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:175">Projects</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:175">Contact info</a>
+    </nav>
     <div id="contents" data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
-      <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true">
-
+      <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true" >
           <h2 id="summaryTitle"> I am a Software Developer</h2>
           <div class="row">
             <div class="col">
@@ -49,15 +52,24 @@
             <div class="col">
               I am a software developer and an engineer who cannot stand an unsolved puzzles and mysteries. 
             </div>
+           
         </div>
-
+        <div class="row">
+          <div class="col">
+          <h4>Technologies :</h4>
+          <h5>
+            Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
+            Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
+            Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
+          </h5> 
+        </div>
+        </div>
+      </div>
         <div id="skills" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
         <div class="row">
           <div class="col">
             <h3> Skills </h3>
-            Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
-            Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
-            Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
+            
           </div>
         </div>
       </div>

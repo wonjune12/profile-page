@@ -8,12 +8,21 @@
   top:0; */
 }
 
-#mainName{
+#landingIntro{
   margin : 10% 0 17% 0;
   position:center;
-  font-family: 'Roboto', sans-serif;
-  font-size : 5em;
-  color : #000000;
+}
+#hello{
+  font-size : 5rem;
+}
+
+#name{
+  font-size : 4em;
+}
+
+#shortIntro{
+  font-size : 1.2em;
+  margin-bottom : 10%;
 }
 
 .landing{
