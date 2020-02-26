@@ -42,7 +42,12 @@
   50% {opacity : 1}
   99% {opacity : 0}
 }
-
+#topName{
+  font-size : 80px;
+  z-index: 1;
+  position : sticky;
+  top :0px;
+}
 
 
 #menuBar{
@@ -52,7 +57,7 @@
 }
 
 #contents{
-  margin: 2.5% 0 2.5% 0;
+  margin: 0.5% 0 0.5% 0;
   padding: 2.5% 0 2.5% 0;
 }
 #aboutMe{
@@ -62,4 +67,8 @@
 #skills{
   margin:inherit;
   padding: inherit;
+}
+
+.col{
+  padding-top : 3%;
 }

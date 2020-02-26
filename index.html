@@ -35,21 +35,24 @@
     </div> 
     
     <nav id="menuBar" class="list-group d-flex flex-row justify-content-center">
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:175">About</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:175">Skills</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:175">Projects</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:175">Contact info</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:160">About</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:160">Skills</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:160">Projects</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:160">Contact info</a>
     </nav>
+    <div id="topName">
+      Wonjun Choi
+    </div>
     <div id="contents" data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
-      <div id="aboutMe" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true" >
-          <h2 id="summaryTitle"> I am a Software Developer</h2>
+      <div id="aboutMe" uk-scrollspy="target: >div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true" >
+          <h1 id="summaryTitle"> I am a Software Developer</h1>
           <div class="row">
             <div class="col">
               <h3>Wonjun Choi</h3>
               <h5> Job : Freelance Developer & Educator</h5>
               <h5> Location : Brooklyn, New York</h5>
             </div>
-            <div class="col">
+            <div class="col mt-4">
               I am a software developer and an engineer who cannot stand an unsolved puzzles and mysteries. 
             </div>
            
@@ -58,12 +61,14 @@
           <div class="col">
           <h4>Technologies :</h4>
           <h5>
-            Languages : HTML,CSS,SASS, Javascript, Ruby, Bash, SQL <br/>
-            Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, Devise, JSON, React <br/>
+            Languages : HTML, CSS, SASS, Javascript, Ruby, Bash, SQL <br/>
+            Frameworks : Bootstrap, UI-kit, Sinatra, Rails, Oauth2, JSON, React <br/>
+            Operating System : Linux(Ubuntu), Windows 10, Mac OS <br/> 
             Tools & etc : Git/Git-hub, Visual Studio Code, PostgreSQL, REST APIs <br/>
           </h5> 
         </div>
         </div>
+
       </div>
         <div id="skills" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
         <div class="row">
@@ -75,8 +80,7 @@
       </div>
 
       <div id="portfolio" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
-      <h4 id="portfolio"> Here is my past projects</h4>
-      <p> This that this that</p>
+      <h4 id="portfolio"> Past Projects</h4>
       <div class="row">
         <div class="col">
           <div class="uk-card uk-visible-toggle" tabindex="-1">
@@ -113,8 +117,17 @@
         </div>
       </div>
     </div>
+    <div id="portfolio" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
       <h4 id="contactInfo"> Here is my contact information</h4>
-      <p> This that this that</p>
+      <div class="d-flex flex-row justify-content-center">
+        
+        <div class="">
+        <a href="https://github.com/wonjune12/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon: github-alt; ratio: 5"> </a>
+        <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon:linkedin; ratio: 5"> </a> <br/> <br/>
+        <span uk-icon="icon:mail; ratio:4"></span> wonjun.choi13@outlook.com
+      </div>
+      </div>
+    </div>
       <br>
       <br>
       <br>
