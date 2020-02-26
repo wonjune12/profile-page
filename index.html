@@ -35,17 +35,19 @@
     </div> 
     
     <nav id="menuBar" class="list-group d-flex flex-row justify-content-center">
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:160">About</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:160">Skills</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:160">Projects</a>
-      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:160">Contact info</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#aboutMe" uk-scroll="offset:150">About</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#education" uk-scroll="offset:125">Education</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#experience" uk-scroll="offset:125">Experience</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#skills" uk-scroll="offset:125">Skills</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#portfolio" uk-scroll="offset:150">Projects</a>
+      <a id="menuItem" class="list-group-item list-group-item-action" href="#contactInfo" uk-scroll="offset:150">Contact info</a>
     </nav>
     <div id="topName">
       Wonjun Choi
     </div>
     <div id="contents" data-spy="scroll" data-target="#menuBar" data-offset="0" class="scrollspy-example">
       <div id="aboutMe" uk-scrollspy="target: >div; cls:uk-animation-slide-top-small; delay: 300; duration : 300; repeat:true" >
-          <h1 id="summaryTitle"> I am a Software Developer</h1>
+          <h1 id="summaryTitle"> I am a Software Developer and Educator</h1>
           <div class="row">
             <div class="col">
               <h3>Wonjun Choi</h3>
@@ -70,6 +72,37 @@
         </div>
 
       </div>
+      <hr>
+        <div id="education" uk-scrollspy="target: >div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+          <div class="card">
+            <div class="card-header">
+              <h4 id="">Education </h4>
+            </div>
+            <div class="card-body">
+              New York Code and Design Academy - Software Engineering Intensive <br>
+              Certification : 2018 - 2019 <br/>
+              14 week intensive coding bootcamp project based curriculum for Full-stack software development fundamentals.
+            </div>
+          </div>
+          
+          
+        </div>
+      <hr>
+
+         <div id="experience" uk-scrollspy="target: >div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+           <div class="card">
+             <div class="card-header">
+              <h4 id="">Experience </h4>
+             </div>
+             <div class="card-body">
+              Dr. Jianping Chen, Psychiatrist's office <br/>
+              <p> Office Manager : 2016 - 2019</p> <br/>
+             </div>
+           </div>
+          
+          
+          
+        </div>
         <div id="skills" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
         <div class="row">
           <div class="col">
@@ -80,7 +113,7 @@
       </div>
 
       <div id="portfolio" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
-      <h4 id="portfolio"> Past Projects</h4>
+      <h4 id=""> Past Projects</h4>
       <div class="row">
         <div class="col">
           <div class="uk-card uk-visible-toggle" tabindex="-1">
@@ -117,11 +150,11 @@
         </div>
       </div>
     </div>
-    <div id="portfolio" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
-      <h4 id="contactInfo"> Here is my contact information</h4>
+    <div id="contactInfo" uk-scrollspy="target: > div; cls:uk-animation-slide-top-small; delay: 300;duration : 300; repeat:true">
+      <h4 id=""> Contact Information</h4>
       <div class="d-flex flex-row justify-content-center">
         
-        <div class="">
+        <div class="mt-6">
         <a href="https://github.com/wonjune12/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon: github-alt; ratio: 5"> </a>
         <a href="https://www.linkedin.com/in/wonjun-choi0513/" class="uk-icon-link uk-margin-left uk-margin-right" target="_blank" uk-icon="icon:linkedin; ratio: 5"> </a> <br/> <br/>
         <span uk-icon="icon:mail; ratio:4"></span> wonjun.choi13@outlook.com
@@ -148,7 +181,8 @@
       <br>
       <br>
       <br>
-      
+      <br>
+      <br>
     </div>
   </div>
 </body>
