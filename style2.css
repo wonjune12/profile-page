@@ -4,8 +4,6 @@
   padding : 15% 0 15% 0;
   font-family : Arial, Helvetica, sans-serif;
   font-weight: bold;
-  /* position:sticky;
-  top:0; */
 }
 
 #landingIntro{
@@ -16,12 +14,8 @@
   font-size : 5rem;
 }
 
-#name{
-  font-size : 4em;
-}
-
 #shortIntro{
-  font-size : 1.2em;
+  font-size : 1.5em;
   margin-bottom : 10%;
 }
 
@@ -43,7 +37,8 @@
   99% {opacity : 0}
 }
 #topName{
-  font-size : 80px;
+  background-color : #ffffff;
+  font-size : 4.3rem;
   z-index: 1;
   position : sticky;
   top :0px;
@@ -52,7 +47,7 @@
 #menuBar{
   z-index: 1;
   position:sticky;
-  top : 100px;
+  top : 110px;
 }
 
 #contents{
@@ -65,5 +60,10 @@
 }
 
 .col{
-  padding-top : 3%;
+  padding-top : 2.5%;
+  padding-bottom : 2.5%;
+}
+
+#someTitle{
+  font-weight: bold;
 }
